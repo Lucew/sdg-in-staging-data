@@ -1,0 +1,52 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Jahr"
+          },
+          {
+            "name": "Abschlussart nach Nationalität",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Deutsche - ohne berufl. Ausbildungsabschluss",
+                "Deutsche - mit anerkanntem Berufsabschluss",
+                "Deutsche - mit akademischem Abschluss",
+                "Deutsche - gesamt mit und ohne Abschluss",
+                "Ausländer - ohne berufl. Ausbildungsabschluss",
+                "Ausländer - mit anerkanntem Berufsabschluss",
+                "Ausländer - mit akademischem Abschluss",
+                "Ausländer - gesamt mit und ohne Abschluss",
+                "Alle - ohne berufl. Ausbildungsabschluss",
+                "Alle - mit anerkanntem Berufsabschluss",
+                "Alle - mit akademischem Abschluss",
+                "Alle - gesamt mit und ohne Abschluss",
+                ""
+              ]
+            },
+            "title": "Abschlussart nach Nationalität"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "10-4",
+  "title": "10-4"
+}

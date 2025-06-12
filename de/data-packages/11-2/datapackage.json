@@ -1,0 +1,48 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Jahr"
+          },
+          {
+            "name": "Barrierefreie und inklusive Mobilitätsangebot",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "gesamt barrierefreie Parkplätze",
+                "Ampeln mit Sensoren",
+                "Ampeln teilausgestattet mit Sensoren",
+                "Bushaltestellen DFI inkl. akustische Ansagen",
+                "Blindenleitsysteme",
+                "städtische barrierefreie Parkplätze",
+                "Eltern-Kind-Parkplätze",
+                "Bushaltestellen taktile Ausstattung",
+                ""
+              ]
+            },
+            "title": "Barrierefreie und inklusive Mobilitätsangebot"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "11-2",
+  "title": "11-2"
+}

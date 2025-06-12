@@ -1,0 +1,49 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Jahr"
+          },
+          {
+            "name": "Offene Arbeits- oder Berufsausbildungsstellen",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Offene Arbeitsstellen Arzt- und Praxishilfe",
+                "Offene Arbeitsstellen Medizin. Laboratorium",
+                "Offene Arbeitsstellen Gesund. Krankenpfl. Rettungsd. Geburtsh.",
+                "Offene Arbeitsstellen Human- und Zahnmedizin",
+                "Offene Arbeitsstellen Psychologie u. nichtärztl. -therapie",
+                "Offene Arbeitsstellen nichtärztl. Therapie und Heilkunde",
+                "Offene Arbeitsstellen Pharmazie",
+                "Offene Arbeitsstellen Gesamt",
+                "Offene Berufsausbildungsstellen Arzt- und Praxishilfe",
+                ""
+              ]
+            },
+            "title": "Offene Arbeits- oder Berufsausbildungsstellen"
+          },
+          {
+            "name": "Value",
+            "type": "integer",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "3-6",
+  "title": "3-6"
+}
